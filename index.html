@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío JavaScript en Práctica</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" autocomplete="name">
+                <p class="error-message" id="nameError">El nombre es requerido.</p>
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" autocomplete="subject">
+                <p class="error-message" id="subjectError">El asunto es requerido.</p>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" autocomplete="message"></textarea>
+                <p class="error-message" id="messageError">El mensaje es requerido.</p>
+            </div>
+            <button type="submit" class="btn">Enviar mensaje</button>
+            <p id="formMessage"></p>
+        </form>
+
+        <h1>Selector de Colores</h1>
+        <div class="color-container">
+            <div class="color-palette">
+                <div class="color-button" data-color="#FF0000" style="background-color: #FF0000;"></div>
+                <div class="color-button" data-color="#FFA500" style="background-color: #FFA500;"></div>
+                <div class="color-button" data-color="#FFFF99" style="background-color: #FFFF99;"></div>
+                <div class="color-button" data-color="#66FF66" style="background-color: #66FF66;"></div>
+                <div class="color-button" data-color="#66FFFF" style="background-color: #66FFFF;"></div>
+                <div class="color-button" data-color="#FF66FF" style="background-color: #FF66FF;"></div>
+            </div>
+            <div id="colorBox" class="color-box"></div>
+        </div>
+
+        <h1>Calculadora</h1>
+        <div class="calculator">
+            <input type="number" id="num1" placeholder="Número 1">
+            <input type="number" id="num2" placeholder="Número 2">
+            <div class="calc-buttons">
+                <button id="sumButton" class="btn"><i class="fas fa-plus"></i></button>
+                <button id="subtractButton" class="btn"><i class="fas fa-minus"></i></button>
+            </div>
+            <p>Resultado: <span class="resultado">0</span></p>
+        </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
