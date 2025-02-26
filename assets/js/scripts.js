@@ -2,7 +2,6 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevenir el envío del formulario
 
-    // Obtener valores de los campos
     const nameInput = document.getElementById('name').value.trim();
     const subjectInput = document.getElementById('subject').value.trim();
     const messageInput = document.getElementById('message').value.trim();
